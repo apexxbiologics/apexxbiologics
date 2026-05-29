@@ -185,11 +185,17 @@ if (accepted === null) {
       </div>
 
       <a
-        href="/cart"
-        className="border border-blue-700 px-3 py-2 hover:bg-blue-700 transition-all rounded-lg"
-      >
-        Cart
-      </a>
+  href="/cart"
+  className="relative border border-blue-700 px-5 py-2 hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg"
+>
+  Cart
+
+  {cartCount > 0 && (
+    <span className="absolute -top-3 -right-3 bg-blue-600 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center">
+      {cartCount}
+    </span>
+  )}
+</a>
     </nav>
 
   </div>
