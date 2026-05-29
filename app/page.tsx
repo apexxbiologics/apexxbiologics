@@ -207,8 +207,7 @@ if (accepted === null) {
 
   </div>
 
-  <div className="relative mt-4">
-    <input
+<div className="relative mt-4 md:mt-0 w-full max-w-xs">    <input
       type="text"
       placeholder="Search products..."
       value={search}
