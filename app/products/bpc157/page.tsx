@@ -12,7 +12,7 @@ export default function BPC157Page() {
       name: "BPC-157",
       price: 80,
       quantity: 1,
-      image: "/images/bpc157.png",
+      image: "/images/bpc157.PNG",
     };
 
     const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
@@ -59,7 +59,7 @@ export default function BPC157Page() {
           {/* IMAGE */}
           <div className="border border-blue-900 rounded-2xl p-10 bg-[#050505] shadow-[0_0_50px_rgba(37,99,235,0.15)]">
             <img
-              src="/images/bpc157.png"
+              src="/images/bpc157.PNG"
               alt="BPC-157"
               className="w-full h-[500px] object-contain drop-shadow-[0_0_40px_rgba(37,99,235,0.3)]"
             />
