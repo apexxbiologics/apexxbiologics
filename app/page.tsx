@@ -10,6 +10,7 @@ export default function Home() {
   const [researchConfirmed, setResearchConfirmed] = useState(false);
 
     const [cartCount, setCartCount] = useState(0);
+      const [moreOpen, setMoreOpen] = useState(false);
 
 const products = [
   { name: "Retatrutide", href: "/products/retatrutide" },
@@ -170,20 +171,25 @@ if (accepted === null) {
         Home
       </a>
 
-      <div className="relative group py-4">
-        <button className="hover:text-blue-400 transition-all uppercase tracking-widest">
-          More
-        </button>
+      <div className="relative py-4">
+  <button
+    onClick={() => setMoreOpen(!moreOpen)}
+    className="hover:text-blue-400 transition-all uppercase tracking-widest"
+  >
+    More
+  </button>
 
-        <div className="absolute right-0 top-full hidden group-hover:flex flex-col bg-black border border-blue-900 rounded-xl min-w-[190px] shadow-[0_0_30px_rgba(37,99,235,0.25)] overflow-hidden z-50">
-          <a href="/peptide-info" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Peptide Info</a>
-          <a href="/coas" className="px-5 py-4 hover:bg-blue-900/40 transition-all">COAs</a>
-          <a href="/about" className="px-5 py-4 hover:bg-blue-900/40 transition-all">About Us</a>
-          <a href="/contact" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Contact</a>
-          <a href="/process" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Our Process</a>
-          <a href="/faq" className="px-5 py-4 hover:bg-blue-900/40 transition-all">FAQs</a>
-        </div>
-      </div>
+  {moreOpen && (
+    <div className="absolute right-0 top-full flex flex-col bg-black border border-blue-900 rounded-xl min-w-[190px] shadow-[0_0_30px_rgba(37,99,235,0.25)] overflow-hidden z-50">
+      <a href="/peptide-info" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Peptide Info</a>
+      <a href="/coas" className="px-5 py-4 hover:bg-blue-900/40 transition-all">COAs</a>
+      <a href="/about" className="px-5 py-4 hover:bg-blue-900/40 transition-all">About Us</a>
+      <a href="/contact" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Contact</a>
+      <a href="/process" className="px-5 py-4 hover:bg-blue-900/40 transition-all">Our Process</a>
+      <a href="/faq" className="px-5 py-4 hover:bg-blue-900/40 transition-all">FAQs</a>
+    </div>
+  )}
+</div>
 
       <a
   href="/cart"
