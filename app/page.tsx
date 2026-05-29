@@ -187,12 +187,12 @@ if (accepted === null) {
 
       <a
   href="/cart"
-  className="relative border border-blue-700 px-5 py-2 hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg"
+  className="relative flex items-center justify-center w-12 h-12 border border-blue-700 rounded-xl hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all"
 >
-  Cart
+  <ShoppingCart size={22} className="text-blue-400" />
 
   {cartCount > 0 && (
-    <span className="absolute -top-3 -right-3 bg-blue-600 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center">
+    <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs font-bold w-6 h-6 rounded-full flex items-center justify-center">
       {cartCount}
     </span>
   )}
