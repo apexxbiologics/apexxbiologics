@@ -12,7 +12,7 @@ export default function RetatrutidePage() {
       name: "Retatrutide",
       price: 90,
       quantity: 1,
-      image: "/images/retatrutide.png",
+      image: "/images/retatrutide.PNG",
     };
 
     const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
@@ -59,7 +59,7 @@ export default function RetatrutidePage() {
           {/* IMAGE */}
           <div className="border border-blue-900 rounded-2xl p-10 bg-[#050505] shadow-[0_0_50px_rgba(37,99,235,0.15)]">
             <img
-              src="/images/retatrutide.png"
+              src="/images/retatrutide.PNG"
               alt="Retatrutide"
               className="w-full h-[500px] object-contain drop-shadow-[0_0_40px_rgba(37,99,235,0.3)]"
             />
