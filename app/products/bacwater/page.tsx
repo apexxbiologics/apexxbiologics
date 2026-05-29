@@ -12,7 +12,7 @@ const addToCart = () => {
     name: "Bacteriostatic Water",
     price: 15,
     quantity: 1,
-    image: "/images/bacwater.png",
+    image: "/images/bacwater.PNG",
   };
 
   const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
@@ -62,7 +62,7 @@ const addToCart = () => {
           {/* IMAGE */}
           <div className="border border-blue-900 rounded-2xl p-10 bg-[#050505] shadow-[0_0_50px_rgba(37,99,235,0.15)]">
             <img
-              src="/images/bacwater.png"
+              src="/images/bacwater.PNG"
               alt="Bacteriostatic Water"
               className="w-full h-[500px] object-contain drop-shadow-[0_0_40px_rgba(37,99,235,0.3)]"
             />
