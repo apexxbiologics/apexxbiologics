@@ -12,7 +12,7 @@ export default function SelankPage() {
       name: "Selank",
       price: 65,
       quantity: 1,
-      image: "/images/selank.png",
+      image: "/images/selank.PNG",
     };
 
     const existingCart = JSON.parse(localStorage.getItem("cart") || "[]");
