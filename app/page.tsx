@@ -169,7 +169,7 @@ if (accepted === null) {
     <nav className="flex items-center gap-4 text-xs uppercase tracking-widest">
       <a
   href="/"
-  className="border border-blue-700 px-4 py-2 hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg"
+  className="border border-blue-700 text-blue-400 px-4 py-2 hover:bg-blue-700 hover:text-white hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg font-semibold tracking-[0.15em] uppercase"
 >
   Home
 </a>
@@ -177,7 +177,7 @@ if (accepted === null) {
       <div className="relative py-4">
   <button
   onClick={() => setMoreOpen(!moreOpen)}
-  className="border border-blue-700 px-4 py-2 hover:bg-blue-700 hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg uppercase tracking-widest"
+  className="border border-blue-700 text-blue-400 px-4 py-2 hover:bg-blue-700 hover:text-white hover:shadow-[0_0_20px_rgba(37,99,235,0.35)] transition-all rounded-lg font-semibold tracking-[0.15em] uppercase"
 >
   More
 </button>
