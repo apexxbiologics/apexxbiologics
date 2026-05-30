@@ -88,18 +88,18 @@ export default function AboutPage() {
 
         <div className="mt-12 border border-blue-900 rounded-2xl p-8 bg-[#050505] flex flex-col md:flex-row justify-center gap-8 text-center">
           <a
-            href="mailto:apexxbiologicsllc@gmail.com"
+            href="mailto:support@apexxbiolabs.com"
             className="text-blue-400 text-lg"
           >
-            APEXXBIOLOGICSLLC@gmail.com
+            support@apexxbiolabs.com
           </a>
 
           <a
-            href="https://www.instagram.com/apexxbiologics"
+            href="https://www.instagram.com/apexxbiolabs"
             target="_blank"
             className="text-blue-400 text-lg"
           >
-            @apexxbiologics
+            @apexxbiolabs
           </a>
         </div>
       </section>
