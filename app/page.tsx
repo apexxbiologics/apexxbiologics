@@ -578,30 +578,44 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
         © 2026 Apexx Biolabs. All rights reserved.
       </p>
 
-      <div className="flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest">
+<div className="flex flex-wrap justify-center gap-6 text-xs uppercase tracking-widest">
 
-        <a
-          href="/terms"
-          className="text-gray-500 hover:text-blue-400 transition-all"
-        >
-          Terms & Conditions
-        </a>
+  <a
+    href="/terms"
+    className="text-gray-500 hover:text-blue-400 transition-all"
+  >
+    Terms & Conditions
+  </a>
 
-        <a
-          href="/privacy"
-          className="text-gray-500 hover:text-blue-400 transition-all"
-        >
-          Privacy Policy
-        </a>
+  <a
+    href="/privacy"
+    className="text-gray-500 hover:text-blue-400 transition-all"
+  >
+    Privacy Policy
+  </a>
 
-        <a
-          href="/contact"
-          className="text-gray-500 hover:text-blue-400 transition-all"
-        >
-          Contact
-        </a>
+  <a
+    href="/refunds"
+    className="text-gray-500 hover:text-blue-400 transition-all"
+  >
+    Refund Policy
+  </a>
 
-      </div>
+  <a
+    href="/shipping"
+    className="text-gray-500 hover:text-blue-400 transition-all"
+  >
+    Shipping Policy
+  </a>
+
+  <a
+    href="/contact"
+    className="text-gray-500 hover:text-blue-400 transition-all"
+  >
+    Contact
+  </a>
+
+</div>
 
     </div>
 
