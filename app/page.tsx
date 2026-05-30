@@ -456,7 +456,7 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
   </h4>
 
   <p className="text-gray-400 mt-3">
-    50mg Research Peptide
+    100mg Research Peptide
   </p>
 
   <a
