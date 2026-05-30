@@ -93,7 +93,7 @@ if (accepted === null) {
 
             <div className="space-y-6 text-gray-300 leading-relaxed text-sm">
               <p>
-                Apexx Biologics products are intended strictly for laboratory
+                Apexx Biolabs products are intended strictly for laboratory
                 research purposes only.
               </p>
 
@@ -123,7 +123,7 @@ if (accepted === null) {
       className="mt-1"
     />
     <span>
-      I understand that all products sold by Apexx Biologics are intended
+      I understand that all products sold by Apexx Biolabs are intended
       strictly for laboratory research use only and are not for human
       consumption, medical use, veterinary use, diagnosis, treatment,
       cure, or prevention of disease.
@@ -162,7 +162,7 @@ if (accepted === null) {
 <div className="flex flex-col md:flex-row items-center justify-between gap-4">
     <img
       src="/images/logo.png"
-      alt="Apexx Biologics"
+      alt="Apexx Biolabs"
       className="h-10 w-auto"
     />
 
@@ -243,7 +243,7 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
           <div className="relative z-10 flex flex-col items-center">
             <img
   src="/images/biglogo.PNG"
-  alt="Apexx Biologics"
+  alt="Apexx Biolabs"
   className="w-full max-w-6xl mb-16 object-contain"
 />
 
@@ -560,7 +560,7 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
             </h3>
 
             <p className="text-gray-400 text-lg leading-relaxed">
-              Apexx Biologics specializes in high-purity research compounds
+              Apexx Biolabs specializes in high-purity research compounds
               manufactured under strict analytical standards. Every batch
               undergoes rigorous verification to ensure purity, consistency,
               and reliability for laboratory applications.
@@ -571,11 +571,11 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
         {/* FOOTER */}
         <footer className="border-t border-blue-900 py-10 px-6 text-center text-gray-500 text-sm bg-black">
           <p className="mb-4">
-            © 2026 Apexx Biologics. All rights reserved.
+            © 2026 Apexx Biolabs. All rights reserved.
           </p>
 
           <p className="max-w-4xl mx-auto leading-relaxed text-gray-600">
-            Products offered by Apexx Biologics are intended strictly for
+            Products offered by Apexx Biolabs are intended strictly for
             laboratory research use only and are not for human consumption,
             medical, veterinary, or household use.
           </p>
