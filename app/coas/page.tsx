@@ -22,7 +22,7 @@ export default function COAsPage() {
         </a>
 
         <p className="uppercase tracking-[0.3em] text-gray-400 text-xs">
-          Apexx Biologics
+          APEXX BIOLABS
         </p>
       </header>
 
