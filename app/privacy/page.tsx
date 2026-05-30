@@ -1,190 +1,154 @@
 export default function PrivacyPage() {
   const sections = [
-    {
-      number: "1",
-      title: "Information We Collect",
-      text: "We may collect information you provide directly to us, including your name, email address, shipping information, billing information, payment details, communications, and account information. We may also collect technical information such as IP address, browser type, device information, pages visited, and cookies.",
-    },
-    {
-      number: "2",
-      title: "How We Use Your Information",
-      text: "We may use information to process orders, communicate with customers, provide support, improve our website, prevent fraud, enhance security, and comply with legal obligations.",
-    },
-    {
-      number: "3",
-      title: "How We Share Information",
-      text: "We do not sell personal information. We may share information with service providers, payment processors, shipping carriers, website providers, and legal authorities when required by law.",
-    },
-    {
-      number: "4",
-      title: "Cookies and Tracking",
-      text: "We may use cookies and similar technologies to improve functionality, analyze website traffic, and enhance the user experience. You may control cookie preferences through your browser settings.",
-    },
-    {
-      number: "5",
-      title: "Data Security",
-      text: "We use reasonable technical and organizational measures to help protect personal information. However, no method of transmission or storage is completely secure.",
-    },
-    {
-      number: "6",
-      title: "Your Rights",
-      text: "Depending on your location, you may have rights to access, correct, delete, or restrict certain personal information. Requests may be submitted through our contact information.",
-    },
-    {
-      number: "7",
-      title: "International Users",
-      text: "If you access this website from outside the United States, your information may be transferred to, stored, and processed in the United States or other locations where service providers operate.",
-    },
-    {
-      number: "8",
-      title: "Children's Privacy",
-      text: "This website is not intended for individuals under 21 years of age. We do not knowingly collect personal information from individuals under 21.",
-    },
-    {
-      number: "9",
-      title: "Changes to This Privacy Policy",
-      text: "We may update this Privacy Policy from time to time. Updated versions will be posted on this page with a revised Last Updated date.",
-    },
+    [
+      "1",
+      "Information We Collect",
+      "We may collect information you provide directly to us, including your name, email address, shipping information, billing information, communications, and account information. Technical information such as IP addresses, browser type, device information, and cookies may also be collected.",
+    ],
+    [
+      "2",
+      "How We Use Information",
+      "Information may be used to process orders, communicate with customers, provide support, improve our website and services, maintain security, prevent fraud, and comply with legal obligations.",
+    ],
+    [
+      "3",
+      "Information Sharing",
+      "We do not sell personal information. Information may be shared with payment processors, shipping providers, website service providers, and legal authorities when required by law.",
+    ],
+    [
+      "4",
+      "Cookies & Tracking",
+      "Our website may use cookies and similar technologies to improve functionality, analyze traffic, and enhance user experience. Browser settings may be used to manage cookie preferences.",
+    ],
+    [
+      "5",
+      "Data Security",
+      "Reasonable technical and organizational safeguards are used to help protect personal information. However, no electronic transmission or storage system can be guaranteed to be completely secure.",
+    ],
+    [
+      "6",
+      "Your Rights",
+      "Depending on your jurisdiction, you may have rights regarding access, correction, deletion, portability, or restriction of personal information. Requests may be submitted through our contact information.",
+    ],
+    [
+      "7",
+      "International Users",
+      "Information may be transferred to and processed in jurisdictions where our service providers operate. By using this website, you consent to such transfers where permitted by law.",
+    ],
+    [
+      "8",
+      "Children's Privacy",
+      "This website is not intended for individuals under the age of 21. We do not knowingly collect information from individuals under 21 years of age.",
+    ],
+    [
+      "9",
+      "Changes To This Policy",
+      "We may update this Privacy Policy periodically. Updated versions will be reflected by revising the Last Updated date displayed on this page.",
+    ],
   ];
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <section className="px-6 py-20 border-b border-blue-900 bg-gradient-to-b from-[#020617] to-black">
-        <div className="max-w-7xl mx-auto">
-          <a
-            href="/"
-            className="text-blue-400 uppercase tracking-widest text-sm hover:text-blue-300 transition-all"
-          >
-            ← Back to Home
-          </a>
+    <main className="min-h-screen bg-black text-white px-6 py-24">
+      <a
+        href="/"
+        className="text-blue-400 uppercase tracking-widest text-sm hover:text-blue-300 transition-all"
+      >
+        ← Back to Home
+      </a>
 
-          <div className="mt-16">
-            <p className="uppercase tracking-[0.35em] text-blue-500 text-sm mb-6">
-              Legal Documentation
-            </p>
+      <section className="max-w-6xl mx-auto mt-16">
+        <div className="text-center mb-16">
+          <p className="uppercase tracking-[0.4em] text-blue-500 text-sm mb-6">
+            Legal Documentation
+          </p>
 
-            <h1 className="text-6xl md:text-7xl font-extrabold leading-tight bg-gradient-to-r from-white via-blue-200 to-blue-600 bg-clip-text text-transparent">
-              Privacy Policy
-            </h1>
+          <h1 className="text-5xl md:text-7xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-300 to-blue-700 bg-clip-text text-transparent mb-8">
+            Privacy Policy
+          </h1>
 
-            <div className="h-[2px] w-72 bg-blue-600 mt-8 mb-8" />
+          <p className="text-gray-500 uppercase tracking-widest text-sm">
+            Last Updated: June 2026
+          </p>
+        </div>
 
-            <p className="text-blue-400 uppercase tracking-widest text-sm font-bold mb-4">
-              Last Updated: June 2026
-            </p>
+        <div className="border border-blue-900 rounded-3xl p-8 md:p-12 bg-[#050505] shadow-[0_0_50px_rgba(37,99,235,0.15)] mb-12">
+          <h2 className="text-3xl font-bold text-blue-400 mb-6">
+            Privacy Commitment
+          </h2>
 
-            <p className="text-gray-400 text-lg leading-relaxed max-w-3xl">
-              Apexx Biolabs is committed to protecting your privacy. This Privacy
-              Policy explains how we collect, use, disclose, and safeguard your
-              information when you visit our website or make a purchase.
-            </p>
+          <p className="text-gray-400 text-lg leading-relaxed">
+            Apexx Biolabs is committed to protecting your privacy. This
+            Privacy Policy explains how we collect, use, disclose, and
+            safeguard your information when you visit our website,
+            interact with our services, or make a purchase.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {sections.map(([number, title, text]) => (
+            <div
+              key={number}
+              className="border border-blue-900 rounded-2xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.20)] transition-all"
+            >
+              <div className="flex items-center gap-4 mb-5">
+                <div className="w-12 h-12 rounded-xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 font-bold">
+                  {number}
+                </div>
+
+                <h2 className="text-2xl font-bold text-blue-400">
+                  {title}
+                </h2>
+              </div>
+
+              <p className="text-gray-400 leading-relaxed">
+                {text}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 border border-blue-900 rounded-3xl p-8 bg-[#050505]">
+          <h2 className="text-2xl font-bold text-blue-400 mb-6">
+            Contact Information
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <p className="uppercase tracking-widest text-blue-500 text-sm mb-2">
+                Email
+              </p>
+
+              <p className="text-gray-400">
+                support@apexxbiolabs.com
+              </p>
+            </div>
+
+            <div>
+              <p className="uppercase tracking-widest text-blue-500 text-sm mb-2">
+                Website
+              </p>
+
+              <p className="text-gray-400">
+                www.apexxbiolabs.com
+              </p>
+            </div>
+
+            <div>
+              <p className="uppercase tracking-widest text-blue-500 text-sm mb-2">
+                Questions
+              </p>
+
+              <p className="text-gray-400">
+                Contact our support team regarding privacy questions.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
 
-      <section className="bg-white text-black px-6 py-16">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-            <div className="lg:col-span-2 space-y-8">
-              {sections.map((section) => (
-                <div
-                  key={section.number}
-                  className="border-b border-gray-200 pb-8"
-                >
-                  <div className="flex items-start gap-5">
-                    <div className="w-14 h-14 rounded-2xl bg-blue-100 border border-blue-200 flex items-center justify-center text-blue-700 font-bold text-xl shrink-0">
-                      {section.number}
-                    </div>
-
-                    <div>
-                      <h2 className="text-2xl md:text-3xl font-bold text-blue-700 mb-3 uppercase">
-                        {section.title}
-                      </h2>
-
-                      <p className="text-gray-700 leading-relaxed">
-                        {section.text}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            <aside className="space-y-8">
-              <div className="border border-blue-200 rounded-3xl p-8 bg-white">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
-                  Our Commitment
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Your privacy is important to us. We aim to be transparent
-                  about how information is collected, used, and protected.
-                </p>
-              </div>
-
-              <div className="border border-blue-200 rounded-3xl p-8 bg-white">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
-                  Marketing Communications
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  With your consent, we may send product updates or promotional
-                  communications. You may opt out at any time.
-                </p>
-              </div>
-
-              <div className="border border-blue-200 rounded-3xl p-8 bg-white">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
-                  Data Retention
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Information is retained only as long as necessary for legal,
-                  operational, security, and customer service purposes.
-                </p>
-              </div>
-
-              <div className="border border-blue-200 rounded-3xl p-8 bg-white">
-                <h3 className="text-2xl font-bold text-blue-700 mb-4">
-                  Questions?
-                </h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Contact us with questions regarding this Privacy Policy.
-                </p>
-              </div>
-            </aside>
-          </div>
-
-          <div className="mt-16 border border-blue-200 rounded-3xl p-8 bg-blue-50">
-            <h2 className="text-2xl font-extrabold text-blue-700 uppercase mb-6">
-              Contact Information
-            </h2>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
-                <p className="font-bold text-blue-700 uppercase mb-2">
-                  Email
-                </p>
-                <p className="text-gray-700">support@apexxbiolabs.com</p>
-              </div>
-
-              <div>
-                <p className="font-bold text-blue-700 uppercase mb-2">
-                  Website
-                </p>
-                <p className="text-gray-700">www.apexxbiolabs.com</p>
-              </div>
-
-              <div>
-                <p className="font-bold text-blue-700 uppercase mb-2">
-                  Questions
-                </p>
-                <p className="text-gray-700">
-                  Contact our support team regarding privacy questions.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="mt-12 text-center text-xs text-gray-500 uppercase tracking-widest">
-            For laboratory research use only. Not for human consumption.
+        <div className="mt-12 border border-blue-900 rounded-3xl p-8 bg-[#050505] text-center">
+          <p className="text-xs text-gray-600 uppercase tracking-widest leading-relaxed">
+            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION.
+            NOT FOR MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
           </p>
         </div>
       </section>
