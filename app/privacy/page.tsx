@@ -1,42 +1,53 @@
+import {
+  Database,
+  Eye,
+  FileText,
+  Share2,
+  Cookie,
+  Lock,
+  Shield,
+  Globe,
+} from "lucide-react";
+
 export default function PrivacyPage() {
   const policies = [
     {
-      number: "01",
+      icon: Database,
       title: "Information We Collect",
       text: "We may collect information you provide directly, including name, email, shipping information, billing information, account details, and communications with us.",
     },
     {
-      number: "02",
+      icon: Eye,
       title: "Automatic Information",
       text: "We may collect technical information such as IP address, browser type, device information, pages visited, cookies, and similar tracking technologies.",
     },
     {
-      number: "03",
+      icon: FileText,
       title: "How We Use Information",
       text: "Information may be used to process orders, provide support, improve our website, prevent fraud, maintain security, and comply with legal obligations.",
     },
     {
-      number: "04",
+      icon: Share2,
       title: "Information Sharing",
       text: "We do not sell personal information. We may share information with payment processors, shipping carriers, service providers, or legal authorities when required.",
     },
     {
-      number: "05",
+      icon: Cookie,
       title: "Cookies & Tracking",
       text: "Cookies may be used to improve site functionality, analyze traffic, remember preferences, and enhance the customer experience.",
     },
     {
-      number: "06",
+      icon: Lock,
       title: "Data Security",
       text: "We use reasonable safeguards to help protect personal information, but no electronic transmission or storage system is completely secure.",
     },
     {
-      number: "07",
+      icon: Shield,
       title: "Your Rights",
       text: "Depending on your location, you may have rights to access, correct, delete, restrict, or request information about your personal data.",
     },
     {
-      number: "08",
+      icon: Globe,
       title: "Children’s Privacy",
       text: "This website is not intended for individuals under 21 years of age. We do not knowingly collect information from individuals under 21.",
     },
@@ -80,24 +91,28 @@ export default function PrivacyPage() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-          {policies.map((policy) => (
-            <div
-              key={policy.number}
-              className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
-            >
-              <div className="w-14 h-14 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 font-bold mb-6">
-                {policy.number}
+          {policies.map((policy) => {
+            const Icon = policy.icon;
+
+            return (
+              <div
+                key={policy.title}
+                className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
+              >
+                <div className="w-16 h-16 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 mb-6 shadow-[0_0_20px_rgba(37,99,235,0.25)]">
+                  <Icon size={32} strokeWidth={2} />
+                </div>
+
+                <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
+                  {policy.title}
+                </h2>
+
+                <p className="text-gray-400 leading-relaxed">
+                  {policy.text}
+                </p>
               </div>
-
-              <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
-                {policy.title}
-              </h2>
-
-              <p className="text-gray-400 leading-relaxed">
-                {policy.text}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-14 border border-blue-900 rounded-3xl p-8 bg-[#050505]">
@@ -124,15 +139,17 @@ export default function PrivacyPage() {
               <p className="uppercase tracking-widest text-blue-500 text-sm mb-2">
                 Privacy Questions
               </p>
-              <p className="text-gray-400">Contact us for privacy-related requests.</p>
+              <p className="text-gray-400">
+                Contact us for privacy-related requests.
+              </p>
             </div>
           </div>
         </div>
 
         <div className="mt-12 border border-blue-900 rounded-3xl p-8 bg-[#050505] text-center">
           <p className="text-xs text-gray-600 uppercase tracking-widest leading-relaxed">
-            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION.
-            NOT FOR MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
+            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION. NOT FOR
+            MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
           </p>
         </div>
       </section>
