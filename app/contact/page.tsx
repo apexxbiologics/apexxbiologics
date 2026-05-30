@@ -14,7 +14,7 @@ export default function ContactPage() {
         </p>
 
         <h1 className="text-6xl font-bold mb-8">
-          Contact Apexx Biologics
+          Contact Apexx Biolabs
         </h1>
 
         <p className="text-gray-400 text-lg mb-14">
