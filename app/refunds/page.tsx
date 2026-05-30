@@ -1,44 +1,55 @@
+import {
+  Ban,
+  XCircle,
+  PackageX,
+  Truck,
+  RotateCcw,
+  FlaskConical,
+  CreditCard,
+  ShieldCheck,
+} from "lucide-react";
+
 export default function RefundPolicyPage() {
   const policies = [
     {
-      number: "01",
+      icon: Ban,
       title: "All Sales Final",
       text: "All sales are final once an order has been processed and shipped. We do not accept returns of opened, used, or partially used products.",
     },
     {
-      number: "02",
+      icon: XCircle,
       title: "Order Cancellations",
       text: "Orders may only be canceled before shipment. Once an order has been packaged, processed, or shipped, it cannot be canceled.",
     },
     {
-      number: "03",
+      icon: PackageX,
       title: "Damaged or Incorrect Orders",
-      text: "If you receive a damaged, incorrect, or missing item, contact us within 48 hours of delivery with your order number, photos of the package, photos of the product received, and a description of the issue.",
+      text: "If you receive a damaged, incorrect, or missing item, contact us within 48 hours of delivery with your order number, clear photos, and a description of the issue.",
     },
     {
-      number: "04",
+      icon: Truck,
       title: "Lost or Stolen Packages",
-      text: "Once a shipment has been transferred to the carrier, ownership and responsibility transfer to the customer. Apexx Biolabs is not responsible for lost packages, stolen packages, carrier delays, or incorrect addresses provided by customers.",
+      text: "Once a shipment has been transferred to the carrier, responsibility transfers to the customer. Apexx Biolabs is not responsible for lost, stolen, or delayed packages.",
     },
     {
-      number: "05",
-      title: "Refused or Returned Shipments",
-      text: "Orders returned due to incorrect address information, refusal of delivery, failure to retrieve the package, or carrier return to sender may be subject to restocking, reshipping, and administrative fees.",
+      icon: RotateCcw,
+      title: "Returned Shipments",
+      text: "Orders returned due to incorrect address information, refusal of delivery, or carrier return-to-sender may be subject to reshipping or administrative fees.",
     },
     {
-      number: "06",
-      title: "Product Quality Concerns",
-      text: "All products are manufactured and sold for laboratory research purposes only. Certificates of Analysis, when available, apply only to the specific batch tested. Experimental outcomes are not guaranteed.",
+      icon: FlaskConical,
+      title: "Product Quality",
+      text: "All products are sold for laboratory research purposes only. Certificates of Analysis, when available, apply only to the specific batch tested.",
     },
     {
-      number: "07",
+      icon: CreditCard,
       title: "Chargeback Policy",
-      text: "By placing an order, the customer agrees to contact Apexx Biolabs first regarding any dispute. Fraudulent chargebacks, false claims, or abuse of the payment dispute process may result in account termination, order cancellation, collection activity, or legal action where permitted by law.",
+      text: "Customers agree to contact Apexx Biolabs before initiating a dispute or chargeback. Fraudulent disputes may result in account restrictions or legal action where permitted.",
     },
     {
-      number: "08",
+      icon: ShieldCheck,
       title: "Refund Exceptions",
-      text: "At our sole discretion, Apexx Biolabs may issue store credit, product replacement, or partial refund for verified shipping errors or product issues. These decisions are made case by case and do not establish a precedent for future claims.",
+      text: "At our sole discretion, store credit, replacement products, or partial refunds may be issued for verified order issues on a case-by-case basis.",
     },
   ];
 
@@ -73,31 +84,35 @@ export default function RefundPolicyPage() {
 
           <p className="text-gray-300 text-lg leading-relaxed">
             Due to the nature of laboratory research products, contamination
-            risks, and quality control requirements, all sales are final once an
+            risks, and quality-control requirements, all sales are final once an
             order has been processed and shipped. We do not accept returns of
-            opened, used, or partially used products under any circumstances.
+            opened, used, or partially used products.
           </p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-          {policies.map((policy) => (
-            <div
-              key={policy.number}
-              className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
-            >
-              <div className="w-14 h-14 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 font-bold mb-6">
-                {policy.number}
+          {policies.map((policy) => {
+            const Icon = policy.icon;
+
+            return (
+              <div
+                key={policy.title}
+                className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
+              >
+                <div className="w-16 h-16 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 mb-6 shadow-[0_0_20px_rgba(37,99,235,0.25)]">
+                  <Icon size={32} strokeWidth={2} />
+                </div>
+
+                <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
+                  {policy.title}
+                </h2>
+
+                <p className="text-gray-400 leading-relaxed">
+                  {policy.text}
+                </p>
               </div>
-
-              <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
-                {policy.title}
-              </h2>
-
-              <p className="text-gray-400 leading-relaxed">
-                {policy.text}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-14 border border-blue-900 rounded-3xl p-8 bg-[#050505]">
@@ -131,8 +146,8 @@ export default function RefundPolicyPage() {
 
         <div className="mt-12 border border-blue-900 rounded-3xl p-8 bg-[#050505] text-center">
           <p className="text-xs text-gray-600 uppercase tracking-widest leading-relaxed">
-            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION.
-            NOT FOR MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
+            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION. NOT FOR
+            MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
           </p>
         </div>
       </section>
