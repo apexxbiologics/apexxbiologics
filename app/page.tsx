@@ -608,11 +608,22 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
     Shipping Policy
   </a>
 
+  <span className="text-blue-900">|</span>
+
   <a
-    href="/contact"
-    className="text-gray-500 hover:text-blue-400 transition-all"
+    href="mailto:support@apexxbiolabs.com"
+    className="text-blue-400 hover:text-blue-300 transition-all"
   >
-    Contact
+    support@apexxbiolabs.com
+  </a>
+
+  <a
+    href="https://instagram.com/apexxbiolabs"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="text-blue-400 hover:text-blue-300 transition-all"
+  >
+    @apexxbiolabs
   </a>
 
 </div>
