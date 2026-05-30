@@ -30,7 +30,7 @@ export default function AboutPage() {
           {[
   {
     icon: <FlaskConical size={46} />,
-    text: "APEXX Biologics supplies laboratory research compounds intended strictly for scientific, educational, and analytical research purposes only.",
+    text: "APEXX BIOLABS supplies laboratory research compounds intended strictly for scientific, educational, and analytical research purposes only.",
   },
 
   {
@@ -50,7 +50,7 @@ export default function AboutPage() {
 
   {
     icon: <Headset size={46} />,
-    text: "APEXX Biologics is committed to maintaining a professional research-focused brand with secure packaging, transparent labeling, and dependable customer support.",
+    text: "APEXX BIOLABS is committed to maintaining a professional research-focused brand with secure packaging, transparent labeling, and dependable customer support.",
   },
 ].map((item, index) => (
   <div
