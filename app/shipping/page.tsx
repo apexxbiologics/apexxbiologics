@@ -1,42 +1,53 @@
+import {
+  MapPin,
+  PackageCheck,
+  EyeOff,
+  AlertCircle,
+  PackageX,
+  Clock,
+  ShieldAlert,
+  Truck,
+} from "lucide-react";
+
 export default function ShippingPolicyPage() {
   const policies = [
     {
-      number: "01",
+      icon: MapPin,
       title: "Shipping Destinations",
       text: "Apexx Biolabs currently ships to eligible addresses within the United States. We reserve the right to refuse shipment to any location where products cannot legally be delivered.",
     },
     {
-      number: "02",
+      icon: PackageCheck,
       title: "Order Tracking",
       text: "Once your order ships, you will receive tracking information. Tracking updates may take up to 24 hours after label creation.",
     },
     {
-      number: "03",
+      icon: EyeOff,
       title: "Discreet Packaging",
       text: "All orders are shipped in plain, discreet packaging. Package contents will not be visibly identified on the exterior packaging.",
     },
     {
-      number: "04",
+      icon: AlertCircle,
       title: "Incorrect Information",
       text: "Customers are responsible for providing accurate shipping information. Apexx Biolabs is not responsible for delays, returned shipments, or delivery issues caused by incorrect addresses.",
     },
     {
-      number: "05",
+      icon: PackageX,
       title: "Lost or Stolen Packages",
       text: "Once a shipment has been transferred to the carrier, ownership and responsibility transfer to the customer. Contact the shipping carrier directly regarding lost or stolen package disputes.",
     },
     {
-      number: "06",
+      icon: Clock,
       title: "Shipping Delays",
       text: "Delivery estimates are not guaranteed. Delays may occur due to weather, holidays, carrier disruptions, high shipping volume, or events beyond our control.",
     },
     {
-      number: "07",
+      icon: ShieldAlert,
       title: "Damaged Shipments",
       text: "If your order arrives damaged, contact us within 48 hours of delivery with your order number and clear photographs of the shipping box, label, and product.",
     },
     {
-      number: "08",
+      icon: Truck,
       title: "Shipping Restrictions",
       text: "All products are intended solely for lawful laboratory research purposes. Customers are responsible for compliance with all applicable laws and regulations.",
     },
@@ -129,24 +140,28 @@ export default function ShippingPolicyPage() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
-          {policies.map((policy) => (
-            <div
-              key={policy.number}
-              className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
-            >
-              <div className="w-14 h-14 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 font-bold mb-6">
-                {policy.number}
+          {policies.map((policy) => {
+            const Icon = policy.icon;
+
+            return (
+              <div
+                key={policy.title}
+                className="border border-blue-900 rounded-3xl p-8 bg-[#050505] hover:border-blue-500 hover:shadow-[0_0_35px_rgba(37,99,235,0.2)] transition-all"
+              >
+                <div className="w-16 h-16 rounded-2xl border border-blue-700 bg-blue-950/30 flex items-center justify-center text-blue-400 mb-6 shadow-[0_0_20px_rgba(37,99,235,0.25)]">
+                  <Icon size={32} strokeWidth={2} />
+                </div>
+
+                <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
+                  {policy.title}
+                </h2>
+
+                <p className="text-gray-400 leading-relaxed">
+                  {policy.text}
+                </p>
               </div>
-
-              <h2 className="text-2xl font-bold text-blue-400 mb-5 uppercase tracking-wide">
-                {policy.title}
-              </h2>
-
-              <p className="text-gray-400 leading-relaxed">
-                {policy.text}
-              </p>
-            </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-14 border border-blue-900 rounded-3xl p-8 bg-[#050505]">
@@ -180,8 +195,8 @@ export default function ShippingPolicyPage() {
 
         <div className="mt-12 border border-blue-900 rounded-3xl p-8 bg-[#050505] text-center">
           <p className="text-xs text-gray-600 uppercase tracking-widest leading-relaxed">
-            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION.
-            NOT FOR MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
+            FOR LABORATORY RESEARCH USE ONLY. NOT FOR HUMAN CONSUMPTION. NOT FOR
+            MEDICAL, DIAGNOSTIC, THERAPEUTIC, OR VETERINARY USE.
           </p>
         </div>
       </section>
