@@ -23,21 +23,21 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <a
-            href="https://www.instagram.com/apexxbiologics"
+            href="https://www.instagram.com/apexxbiolabs"
             target="_blank"
             className="border border-blue-900 rounded-2xl p-10 bg-[#050505] hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)] transition-all"
           >
             <h2 className="text-3xl font-bold mb-4">Instagram</h2>
-            <p className="text-blue-400 text-xl">@apexxbiologics</p>
+            <p className="text-blue-400 text-xl">@apexxbiolabs</p>
           </a>
 
           <a
-            href="mailto:apexxbiologicsllc@gmail.com"
+            href="mailto:support@apexxbiolabs.com"
             className="border border-blue-900 rounded-2xl p-10 bg-[#050505] hover:border-blue-400 hover:shadow-[0_0_30px_rgba(37,99,235,0.25)] transition-all"
           >
             <h2 className="text-3xl font-bold mb-4">Email</h2>
             <p className="text-blue-400 text-xl">
-              apexxbiologicsllc@gmail.com
+              support@apexxbiolabs.com
             </p>
           </a>
         </div>
