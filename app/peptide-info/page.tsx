@@ -177,77 +177,92 @@ export default function PeptideInfoPage() {
 
 </section>
 
-          {/* RETATRUTIDE */}
-<div className="border border-blue-900 rounded-2xl p-10 bg-[#050505] shadow-[0_0_35px_rgba(37,99,235,0.12)]">
+{/* RETATRUTIDE */}
+<div className="border border-blue-900 rounded-2xl overflow-hidden">
+  <button
+    onClick={() =>
+      setOpenPeptide(openPeptide === "retatrutide" ? null : "retatrutide")
+    }
+    className="w-full text-left p-8 bg-[#050505] hover:bg-[#080808] transition-all"
+  >
+    <div className="flex items-center justify-between gap-6">
+      <div>
+        <p className="uppercase tracking-[0.3em] text-blue-500 text-sm mb-2">
+          Metabolic Research Peptide
+        </p>
 
-  <p className="uppercase tracking-[0.3em] text-blue-500 text-sm mb-4">
-    Metabolic Research Peptide
-  </p>
+        <h2 className="text-4xl font-bold text-blue-400">
+          Retatrutide
+        </h2>
+      </div>
 
-  <h2 className="text-4xl font-bold mb-4 text-blue-400">
-    Retatrutide
-  </h2>
-
-  <p className="text-sm text-gray-500 mb-8">
-    39 amino acids | MW: 4731.41 g/mol | GCGR / GIPR / GLP-1R Triple Agonist
-  </p>
-
-  <p className="text-gray-300 text-lg leading-relaxed mb-8">
-    Retatrutide (LY3437943) is a novel triple agonist research peptide studied
-    for its interaction with glucagon receptor (GCGR),
-    glucose-dependent insulinotropic polypeptide receptor (GIPR),
-    and glucagon-like peptide-1 receptor (GLP-1R) pathways in metabolic and
-    energy-regulation research models.
-  </p>
-
-  <div className="border border-blue-900 rounded-xl p-6 mb-8 bg-black/40">
-    <h3 className="text-xl font-semibold text-blue-400 mb-3">
-      Mechanism Research
-    </h3>
-
-    <p className="text-gray-400 leading-relaxed">
-      Experimental studies have investigated Retatrutide for its role in
-      incretin signaling, glucose metabolism pathways, insulin sensitivity,
-      appetite regulation, thermogenic activity, and energy-expenditure
-      mechanisms in laboratory models.
-    </p>
-  </div>
-
-  <div>
-    <h3 className="text-xl font-semibold text-white mb-4">
-      Research Areas
-    </h3>
-
-    <div className="flex flex-wrap gap-3">
-
-      <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
-        Triple receptor agonist research
+      <span className="text-4xl text-blue-400">
+        {openPeptide === "retatrutide" ? "−" : "+"}
       </span>
-
-      <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
-        Metabolic pathway studies
-      </span>
-
-      <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
-        Energy expenditure research
-      </span>
-
-      <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
-        Glucose signaling models
-      </span>
-
-      <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
-        Incretin pathway investigation
-      </span>
-
     </div>
-  </div>
+  </button>
 
-  <p className="mt-10 text-xs text-gray-600 uppercase tracking-widest">
-    For laboratory research use only. Not for human consumption.
-  </p>
+  {openPeptide === "retatrutide" && (
+    <div className="p-10 bg-[#050505] border-t border-blue-900">
+      <p className="text-sm text-gray-500 mb-8">
+        39 amino acids | MW: 4731.41 g/mol | GCGR / GIPR / GLP-1R Triple Agonist
+      </p>
 
-          </div>
+      <p className="text-gray-300 text-lg leading-relaxed mb-8">
+        Retatrutide (LY3437943) is a novel triple agonist research peptide
+        studied for its interaction with glucagon receptor (GCGR),
+        glucose-dependent insulinotropic polypeptide receptor (GIPR), and
+        glucagon-like peptide-1 receptor (GLP-1R) pathways in metabolic and
+        energy-regulation research models.
+      </p>
+
+      <div className="border border-blue-900 rounded-xl p-6 mb-8 bg-black/40">
+        <h3 className="text-xl font-semibold text-blue-400 mb-3">
+          Mechanism Research
+        </h3>
+
+        <p className="text-gray-400 leading-relaxed">
+          Experimental studies have investigated Retatrutide for its role in
+          incretin signaling, glucose metabolism pathways, insulin sensitivity,
+          appetite regulation, thermogenic activity, and energy-expenditure
+          mechanisms in laboratory models.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold text-white mb-4">
+          Research Areas
+        </h3>
+
+        <div className="flex flex-wrap gap-3">
+          <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
+            Triple receptor agonist research
+          </span>
+
+          <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
+            Metabolic pathway studies
+          </span>
+
+          <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
+            Energy expenditure research
+          </span>
+
+          <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
+            Glucose signaling models
+          </span>
+
+          <span className="border border-blue-700 text-blue-400 rounded-full px-4 py-2 text-sm">
+            Incretin pathway investigation
+          </span>
+        </div>
+      </div>
+
+      <p className="mt-10 text-xs text-gray-600 uppercase tracking-widest">
+        For laboratory research use only. Not for human consumption.
+      </p>
+    </div>
+  )}
+</div>
 
           {/* BPC157 */}
 <div className="border border-blue-900 rounded-2xl overflow-hidden">
