@@ -102,8 +102,7 @@ export default function ContactPage() {
           </a>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">
-          <div className="border border-blue-900 rounded-2xl p-8 bg-[#050505]">
+<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-16">          <div className="border border-blue-900 rounded-2xl p-8 bg-[#050505]">
             <h3 className="text-xl font-bold text-blue-400 mb-4">
               Research Use Only
             </h3>
@@ -127,6 +126,33 @@ export default function ContactPage() {
             <h3 className="text-xl font-bold text-blue-400 mb-4">
               Fast Support
             </h3>
+
+            <div className="border border-blue-900 rounded-2xl p-8 bg-[#050505]">
+  <h3 className="text-xl font-bold text-blue-400 mb-4">
+    Business Hours
+  </h3>
+
+  <p className="text-gray-500 leading-relaxed">
+    Monday – Friday
+    <br />
+    9:00 AM – 5:00 PM EST
+    <br />
+    Support inquiries are typically answered within 24–48 business hours.
+  </p>
+</div>
+
+<div className="border border-blue-900 rounded-2xl p-8 bg-[#050505]">
+  <h3 className="text-xl font-bold text-blue-400 mb-4">
+    Compliance Notice
+  </h3>
+
+  <p className="text-gray-500 leading-relaxed">
+    Apexx Biolabs supplies products intended exclusively for scientific,
+    analytical, and educational laboratory research applications. We do not
+    provide medical advice, treatment recommendations, or guidance regarding
+    human use of any product.
+  </p>
+</div>
 
             <p className="text-gray-500 leading-relaxed">
               Reach out anytime regarding products or existing orders.
