@@ -6,8 +6,7 @@ import { ShoppingCart } from "lucide-react";
 export default function Home() {
   const [search, setSearch] = useState("");
 
-  const [ageConfirmed, setAgeConfirmed] = useState(false);
-  const [researchConfirmed, setResearchConfirmed] = useState(false);
+const [disclaimerChecked, setDisclaimerChecked] = useState(false);
 
     const [cartCount, setCartCount] = useState(0);
       const [moreOpen, setMoreOpen] = useState(false);
@@ -107,50 +106,40 @@ if (accepted === null) {
 
               <div className="space-y-4 text-gray-400">
 
-  <label className="flex items-start gap-3 cursor-pointer">
-    <input
-      type="checkbox"
-      className="mt-1"
-    />
-    <span>
-      I confirm that I am at least 21 years of age.
-    </span>
-  </label>
+<label className="flex items-start gap-3 cursor-pointer border border-blue-900 rounded-xl p-5 bg-black/40">
+  <input
+    type="checkbox"
+    checked={disclaimerChecked}
+    onChange={(e) => setDisclaimerChecked(e.target.checked)}
+    className="mt-1"
+  />
 
-  <label className="flex items-start gap-3 cursor-pointer">
-    <input
-      type="checkbox"
-      className="mt-1"
-    />
-    <span>
-      I understand that all products sold by Apexx Biolabs are intended
-      strictly for laboratory research use only and are not for human
-      consumption, medical use, veterinary use, diagnosis, treatment,
-      cure, or prevention of disease.
-    </span>
-  </label>
-
-  <label className="flex items-start gap-3 cursor-pointer">
-    <input
-      type="checkbox"
-      className="mt-1"
-    />
-    <span>
-      I agree to comply with all applicable federal, state, and local laws
-      regarding the purchase, possession, and use of research materials.
-    </span>
-  </label>
+  <span className="text-gray-300 leading-relaxed">
+    I confirm that I am at least 21 years of age and understand that all
+    products sold by Apexx Biolabs are intended strictly for lawful laboratory
+    research use only. I understand these products are not for human
+    consumption, medical use, veterinary use, diagnosis, treatment, cure, or
+    prevention of disease, and I agree to comply with all applicable federal,
+    state, and local laws regarding the purchase, possession, and use of
+    research materials.
+  </span>
+</label>
 
 </div>
             </div>
 
             <div className="flex justify-center mt-10">
               <button
-                onClick={handleAccept}
-                className="bg-blue-600 hover:bg-blue-500 hover:shadow-[0_0_25px_rgba(37,99,235,0.45)] px-10 py-4 uppercase tracking-widest text-sm font-semibold transition-all rounded-lg"
-              >
-                I Acknowledge & Enter
-              </button>
+  onClick={handleAccept}
+  disabled={!disclaimerChecked}
+  className={`px-10 py-4 uppercase tracking-widest text-sm font-semibold rounded-xl transition-all ${
+    disclaimerChecked
+      ? "bg-blue-600 hover:bg-blue-500 text-white"
+      : "bg-gray-800 text-gray-500 cursor-not-allowed"
+  }`}
+>
+  I Acknowledge & Enter
+</button>
             </div>
           </div>
         </div>
