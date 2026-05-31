@@ -225,9 +225,9 @@ if (accepted === null) {
 </header>
 
         {/* HERO */}
-        <section
-className="relative flex flex-col items-center justify-center text-center pt-56 pb-28 px-6 bg-cover bg-center"        >
-          <div className="absolute inset-0 bg-black/60"></div>
+<section
+  className="relative flex flex-col items-center justify-center text-center pt-16 md:pt-24 pb-28 px-6 bg-cover bg-center"
+>          <div className="absolute inset-0 bg-black/60"></div>
 
           <div className="relative z-10 flex flex-col items-center">
             <img
