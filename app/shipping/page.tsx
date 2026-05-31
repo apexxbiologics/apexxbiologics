@@ -46,11 +46,11 @@ export default function ShippingPolicyPage() {
       title: "Damaged Shipments",
       text: "If your order arrives damaged, contact us within 48 hours of delivery with your order number and clear photographs of the shipping box, label, and product.",
     },
-    {
-      icon: Truck,
-      title: "Shipping Restrictions",
-      text: "All products are intended solely for lawful laboratory research purposes. Customers are responsible for compliance with all applicable laws and regulations.",
-    },
+{
+  icon: Truck,
+  title: "Shipping Restrictions",
+  text: "All products are intended solely for lawful laboratory research purposes. Customers are responsible for compliance with all applicable laws and regulations. Apexx Biolabs reserves the right to cancel or refuse any order that appears inconsistent with our research-use-only policies or applicable laws and regulations.",
+},
   ];
 
   return (
