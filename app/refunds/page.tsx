@@ -12,20 +12,15 @@ import {
 export default function RefundPolicyPage() {
   const policies = [
     {
-      icon: Ban,
-      title: "All Sales Final",
-      text: "All sales are final once an order has been processed and shipped. We do not accept returns of opened, used, or partially used products.",
-    },
-    {
       icon: XCircle,
       title: "Order Cancellations",
       text: "Orders may only be canceled before shipment. Once an order has been packaged, processed, or shipped, it cannot be canceled.",
     },
-    {
-      icon: PackageX,
-      title: "Damaged or Incorrect Orders",
-      text: "If you receive a damaged, incorrect, or missing item, contact us within 48 hours of delivery with your order number, clear photos, and a description of the issue.",
-    },
+ {
+  icon: PackageX,
+  title: "Damaged or Incorrect Orders",
+  text: "If you receive a damaged, incorrect, or missing item, contact us within 48 hours of delivery with your order number, clear photos, and a description of the issue. Apexx Biolabs reserves the right to review all claims and may request additional information, photographs, or documentation before issuing a replacement, store credit, or refund.",
+},
     {
       icon: Truck,
       title: "Lost or Stolen Packages",
