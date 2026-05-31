@@ -10,7 +10,7 @@ export default function TB500Page() {
     const product = {
       id: "tb500",
       name: "TB-500",
-      price: 85,
+      price: 65,
       quantity: 1,
       image: "/images/tb500.PNG",
     };
