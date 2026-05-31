@@ -10,7 +10,7 @@ const addToCart = () => {
   const product = {
     id: "bacwater",
     name: "Bacteriostatic Water",
-    price: 15,
+    price: 30,
     quantity: 1,
     image: "/images/bacwater.PNG",
   };
@@ -85,13 +85,13 @@ const addToCart = () => {
             </p>
 
             <div className="text-3xl font-bold text-blue-400 mb-10">
-              $15.00
+              $30.00
             </div>
 
             <div className="space-y-5 mb-10">
               <div className="flex justify-between border-b border-blue-950 pb-4">
                 <span className="text-gray-400">Volume</span>
-                <span>10mL</span>
+                <span>30mL</span>
               </div>
 
               <div className="flex justify-between border-b border-blue-950 pb-4">
