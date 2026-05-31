@@ -329,7 +329,7 @@ className="relative flex flex-col items-center justify-center text-center pt-56 
 
               <h4 className="text-2xl font-semibold">Retatrutide</h4>
 
-              <p className="text-gray-400 mt-3">10mg Research Peptide</p>
+              <p className="text-gray-400 mt-3">10-20mg Research Peptide</p>
 
               <a
   href="/products/retatrutide"
