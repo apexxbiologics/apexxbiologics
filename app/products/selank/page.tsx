@@ -10,7 +10,7 @@ export default function SelankPage() {
     const product = {
       id: "selank",
       name: "Selank",
-      price: 65,
+      price: 60,
       quantity: 1,
       image: "/images/selank.PNG",
     };
