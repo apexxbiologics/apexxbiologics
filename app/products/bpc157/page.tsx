@@ -82,7 +82,7 @@ export default function BPC157Page() {
             </p>
 
             <div className="text-3xl font-bold text-blue-400 mb-10">
-              $80.00
+              $60.00
             </div>
 
             {/* DETAILS */}
