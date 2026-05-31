@@ -15,11 +15,11 @@ import {
 
 export default function TermsPage() {
   const sections = [
-    {
-      icon: FlaskConical,
-      title: "Research Use Only",
-      text: "All products offered by Apexx Biolabs are sold strictly for laboratory research purposes only. Products are not intended for human consumption, veterinary use, medical use, diagnostic use, therapeutic use, or treatment or prevention of disease.",
-    },
+{
+  icon: FlaskConical,
+  title: "Research Use Only",
+  text: "All products offered by Apexx Biolabs are sold strictly for laboratory research purposes only. Products are not intended for human consumption, veterinary use, medical use, diagnostic use, therapeutic use, or treatment or prevention of disease. Apexx Biolabs does not provide dosing instructions, treatment recommendations, medical advice, or guidance regarding human use of any product.",
+},
     {
       icon: UserCheck,
       title: "Age Requirement",
