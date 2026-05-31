@@ -10,7 +10,7 @@ export default function SemaxPage() {
     const product = {
       id: "semax",
       name: "Semax",
-      price: 65,
+      price: 60,
       quantity: 1,
       image: "/images/semax.PNG",
     };
