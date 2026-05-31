@@ -1,13 +1,6 @@
-import type { Metadata } from "next";
 "use client";
 
 import { useState } from "react";
-
-export const metadata: Metadata = {
-  title: "Retatrutide 10mg",
-  description:
-    "Retatrutide 10mg research peptide intended strictly for laboratory research and analytical applications.",
-};
 
 export default function RetatrutidePage() {
   const [added, setAdded] = useState(false);
