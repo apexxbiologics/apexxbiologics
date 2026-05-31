@@ -30,5 +30,25 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://www.apexxbiolabs.com/shipping",
       lastModified: new Date(),
     },
+    {
+  url: "https://www.apexxbiolabs.com/products/retatrutide",
+  lastModified: new Date(),
+},
+{
+  url: "https://www.apexxbiolabs.com/products/tb500",
+  lastModified: new Date(),
+},
+{
+  url: "https://www.apexxbiolabs.com/products/bpc157",
+  lastModified: new Date(),
+},
+{
+  url: "https://www.apexxbiolabs.com/products/ghkcu",
+  lastModified: new Date(),
+},
+{
+  url: "https://www.apexxbiolabs.com/products/bacwater",
+  lastModified: new Date(),
+},
   ];
 }
